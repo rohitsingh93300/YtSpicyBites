@@ -5,17 +5,17 @@ import Lottie from 'lottie-react'
 const Contact = () => {
 
     return (
-        <div className=''>
+        <div className='' id='contact'>
             <div className="pb-20">
-                <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-4xl font-bold tracking-tight text-red-500 ">Contact Us</h2>
-                    <p className="mt-2 text-xl leading-8 text-gray-600">
+                <div className="mx-auto max-w-2xl text-center px-4 lg:px-0">
+                    <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-red-500 ">Contact Us</h2>
+                    <p className="mt-2 text-lg lg:text-xl leading-8 text-gray-600">
                         Aute magna irure deserunt veniam aliqua magna enim voluptate.
                     </p>
                 </div>
-                <div className='grid grid-cols-2 '>
+                <div className='lg:grid lg:grid-cols-2 mt-10 lg:mt-0'>
                     <Lottie animationData={delivery} />
-                    <form action="#" className="mx-auto mt-16 max-w-xl sm:mt-20 bg-orange-50 p-8 rounded-lg">
+                    <form action="#" className="lg:mx-auto mt-16 max-w-xl sm:mt-20 bg-orange-50 p-8 rounded-lg mx-4 ">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
                                 <label htmlFor="first-name" className="block text-sm font-semibold leading-6 ">

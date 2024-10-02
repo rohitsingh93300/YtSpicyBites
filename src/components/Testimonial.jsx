@@ -48,8 +48,8 @@ const Testimonial = () => {
       ]
 
     return (
-        <div className='py-10'>
-                <h1 className='text-center text-4xl font-bold'>What Our Customers Say</h1>
+        <div className='py-10 '>
+                <h1 className='text-center text-3xl lg:text-4xl font-bold'>What Our Customers Say</h1>
             <div className=' max-w-6xl mx-auto py-10 px-3 '>
                 <Swiper
                    style={{
@@ -65,6 +65,12 @@ const Testimonial = () => {
                     autoplay={{delay:5000}}
                     slidesPerView={3}
                     spaceBetween={30}
+                    breakpoints={{
+                        320: { slidesPerView: 1 },
+                        480: { slidesPerView: 1 },
+                        768: { slidesPerView: 2 },
+                        1024: { slidesPerView: 3 },
+                      }}
                     pagination={{
                         el: ".swiper-pagination",
                         type: "bullets",
@@ -76,20 +82,20 @@ const Testimonial = () => {
                 >
                     {
                         testimonials.map((item)=> {
-                            return <SwiperSlide>
+                            return <SwiperSlide key={item.id}>
                             <div className='border border-gray-400 shadow-md shadow-orange-500 rounded-lg flex flex-col p-4'>
                                 {item.rating === 4 ? ( <div className='flex'>
-                                    <Star fill />
-                                    <Star fill />
-                                    <Star fill />
-                                    <Star fill />
+                                    <Star fill='true' />
+                                    <Star fill='true' />
+                                    <Star fill='true' />
+                                    <Star fill='true' />
                                     <Star />
                                 </div>):( <div className='flex'>
-                                    <Star fill />
-                                    <Star fill />
-                                    <Star fill />
-                                    <Star fill />
-                                    <Star fill />
+                                    <Star fill='true' />
+                                    <Star fill='true' />
+                                    <Star fill='true' />
+                                    <Star fill='true' />
+                                    <Star fill='true' />
                                 </div>)}
                                
                                 <p className='py-3'>{item.text}</p>
