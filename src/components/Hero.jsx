@@ -13,8 +13,8 @@ import tomatocut from "../assets/tomatocut.png"
 const Hero = () => {
     return (
         <div className=' bg-orange-50 h-[600px] '>
-            <div className='flex items-center justify-center p-5 max-w-7xl mx-auto relative'>
-                <div className='w-1/2 space-y-6 px-10 relative z-20' >
+            <div className='flex lg:flex-row flex-col items-center justify-center p-5 lg:max-w-7xl mx-auto relative'>
+                <div className='lg:w-1/2 lg:space-y-6 lg:px-10 relative z-20' >
                     <div className='flex gap-2'>
                         <img src={playStore} alt="playstore" className='w-28 h-10' />
                         <img src={appStore} alt="appstore" className='w-28 h-10' />
@@ -22,10 +22,10 @@ const Hero = () => {
                     <div className='z-10'>
 
                     </div>
-                    <h1 className='font-bold text-6xl tracking-normal'>
+                    <h1 className='font-bold sm:text-xl lg:text-6xl tracking-normal'>
                         
                        <span className='text-red-500'>Delicious</span>  Meals Delivered to Your Doorsteps.</h1>
-                    <p>Discover a world of culinary delights with our food delivery service. Enjoy fast, reliable delivery and a wide selection of mouthwatering dishes.</p>
+                    <p className='text-sm'>Discover a world of culinary delights with our food delivery service. Enjoy fast, reliable delivery and a wide selection of mouthwatering dishes.</p>
                     <div className='flex gap-3'>
                         <button className='bg-red-500 px-3 py-2 z-20 rounded-lg text-white hover:bg-red-600 hover:scale-110 transition-all'>Order Now</button>
                         <button className='bg-white px-3 py-2 rounded-lg border z-20 border-red-500 text-red-500 hover:bg-white hover:scale-110 transition-all'>Contact Now</button>
